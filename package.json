@@ -1,7 +1,7 @@
 {
   "name": "m.watch",
-  "version": "0.0.2",
-  "description": "**[m(icro)](https://github.com/ivoputzer/m.cro#readme)[watch](https://github.com/ivoputzer/m.watch)** is a lightweight [node.js](https://nodejs.org/) binary written in es6+ that watches cwd for changes and triggers command right after upon changes.",
+  "version": "0.0.3",
+  "description": "m(icro)watch is a handy yet lightweight node.js binary written in es6+ that watches the current working directory for changes and triggers the given command right after!",
   "main": "index.js",
   "bin": {
     "m.watch": "index.js"
