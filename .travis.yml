@@ -1,0 +1,23 @@
+language: node_js
+git:
+  depth: 1
+node_js:
+- 7.5
+- 7.0
+- 6.9
+- 6.0
+before_install:
+- npm i standard
+- node_modules/.bin/standard
+install:
+- npm i --production
+deploy:
+  provider: npm
+  skip_cleanup: true
+  email: ivo.putzer@gmail.com
+  api_key:
+    secure: oGkN/jstfx8GFLYtgwrGPIBXi25iuCxCF+hENR+FbJJtoUN4vZ1FJR+P7CJOjqE8SA7HPSgLrgjLaTEraa1i49dlJNWEMi5+dkzJgQFy/NhquhJTk2G9N4lOXE2S0tI+w3msnucv0tssBNwIxvNqiq5eofeZRwbUNGNSzBmIxjemJudLbLF30/wi3OnxKALMb+rxgUlAvP75mrh1TSmBuei87TaVk/7r/DVseBIPDo/iACs8oA/BJzv1soe941bRWv2+HIiIe0l1+3a+6sI7XdbxQwxSWSfWy3ZoAe4j1Kgge4lszjKKtJ2EXDbxm5BJekpR9Z9ApAZ5ug52+fvWI/WmBAQ7W2Ch9TX1UcDz1zm6XB7N4VSK23A2MQR2Tk6zirpJETNzDNHmcktXXZ6SqeQeSd2ZUtlROnQWlNqBC00CTSIVDMrhIqSiqYQYzApfpkLaWzlilR/f2oEJPobwooPGc+eRqO+2OQuuArz2YLTRnMgPtvdTYuR1yohiFtypIonvxW0Y0SbIoX6ymtbG/Omdu9Dg4Qhhu7EcyYO+5qEGwL06ooFm3Xl+9wxpvM/P9QPxgFqQgnZ1H33ORksGVZWhxS4VBF6XZ/WSBwYg8IwD6HO4Yiyu7U8nfvog5NAJJFk3gu2Pvdp0KsPrjsHlyKQKUaocrusAKcIu7teRuII=
+  on:
+    repo: ivoputzer/m.watch
+    tags: false
+    branch: master
