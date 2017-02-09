@@ -9,8 +9,6 @@ node_js:
 before_install:
 - npm i standard
 - node_modules/.bin/standard
-install:
-- npm i --production
 deploy:
   provider: npm
   skip_cleanup: true
