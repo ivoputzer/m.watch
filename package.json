@@ -1,6 +1,6 @@
 {
   "name": "m.watch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "m(icro)watch is a handy yet lightweight node.js binary written in es6+ that watches the current working directory for changes and triggers the given command right after!",
   "main": "index.js",
   "bin": {

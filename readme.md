@@ -3,12 +3,12 @@
 
 #### global install and usage
 ```sh
-    npm -g install m.test
+    npm -g install m.watch
     m.watch echo "something changed\!"
 ```
 
 ####  local install and usage
 ```sh
-  npm install -D m.test
+  npm install -D m.watch
   node_modules/.bin/m.watch
 ```
