@@ -1,0 +1,21 @@
+{
+  "name": "m.watch",
+  "version": "0.0.0-rc.0",
+  "description": "**[m(icro)](https://github.com/ivoputzer/m.cro#readme)[watch](https://github.com/ivoputzer/m.watch)** is a lightweight [node.js](https://nodejs.org/) binary written in es6+ that watches cwd for changes and triggers command right after upon changes.",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivoputzer/m.watch.git"
+  },
+  "keywords": [
+  ],
+  "author": "Ivo von Putzer Reibegg <ivo.putzer@gmail.com> (https://github.com/ivoputzer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivoputzer/m.watch/issues"
+  },
+  "homepage": "https://github.com/ivoputzer/m.watch#readme"
+}
