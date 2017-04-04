@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const {watch} = require('..')
+const {spawn} = require('child_process')
+const {cwd, argv: [_0, _1, cmd, ...args]} = process
+
+watch(cwd(), {recursive: true, env: process.env}, (type, path) => {
+  if (/^\.git\//.test(path)) return
+  // todo: ignore files within .*ignore files
+  return spawn(cmd, args, {stdio: 'inherit'})
+})

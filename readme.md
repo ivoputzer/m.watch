@@ -4,11 +4,17 @@
 #### global install and usage
 ```sh
     npm -g install m.watch
+    watch echo "something changed\!"
+    # or namespaced
     m.watch echo "something changed\!"
 ```
 
 ####  local install and usage
 ```sh
   npm install -D m.watch
-  node_modules/.bin/m.watch
+  # package.json
+  # ...
+  # "test": "m.watch m.test"
+  # ...
+  npm run test
 ```

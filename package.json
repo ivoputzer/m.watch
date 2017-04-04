@@ -1,6 +1,6 @@
 {
   "name": "m.watch",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "m(icro)watch is a handy yet lightweight node.js binary written in es6+ that watches the current working directory for changes and triggers the given command right after!",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,9 @@
   },
   "scripts": {
     "node": "node",
-    "test": "m.test"
+    "lint": "standard",
+    "test": "m.test",
+    "test-ci": "node --require ./node_modules/m.test/global.js ./node_modules/istanbul/lib/cli.js cover --print detail test"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,7 @@
   },
   "homepage": "https://github.com/ivoputzer/m.watch#readme",
   "devDependencies": {
-    "m.test": "^0.0.53"
+    "m.test": "0.0.54"
   },
   "standard": {
     "globals": [
